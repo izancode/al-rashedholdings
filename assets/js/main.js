@@ -1,4 +1,3 @@
-console.log("Javascript is running");
 gsap.registerPlugin(MotionPathPlugin);
 
 const circlePath = MotionPathPlugin.convertToPath("#holder", false)[0];
@@ -106,8 +105,12 @@ function moveWheel(amount, i, index) {
 
   gsap.to(tl, {
     progress: snap(tl.progress() + amount),
+    duration: 0.8, // <--- Add this line
     modifiers: {
       progress: wrapProgress,
     },
   });
 }
+setInterval(() => {
+  moveWheel(-itemStep); // next item ki taraf ghoomega
+}, 2000);
