@@ -1,61 +1,74 @@
 body {
   max-width: 1200px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: 0 auto;
 }
-
-.mainBox {
-  position: relative;
-  max-width: 500px;
-  /* margin: auto; */
+.slideShow {
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
 }
-
-.wrapper {
-  position: relative;
-}
-
-.item {
-  width: 50px;
-  height: 50px;
-  color: white;
-  text-align: center;
-  /* line-height: 50px; */
-  font-size: 24px;
-  font-family: "Roboto", sans-serif;
+.carousel {
+  width: 30rem;
+  height: 30rem;
+  border: 2rem solid #eebe97;
   border-radius: 100%;
-  background-color: red;
-  z-index: 1;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  transition: rotate 1s;
 }
-.item img {
+.slide {
+  width: 5rem;
+  position: absolute;
+  /* border: 1px solid red; */
+}
+
+.slide:nth-child(1) {
+  right: -28px;
+  /* right: -250px; */
+}
+.slide:nth-child(2) {
+  right: 28px;
+  bottom: 20px;
+}
+.slide:nth-child(3) {
+  rigth: unset;
+  bottom: -28px;
+}
+.slide:nth-child(4) {
+  left: 28px;
+  bottom: 20px;
+}
+.slide:nth-child(5) {
+  left: -28px;
+}
+.slide:nth-child(6) {
+  top: 20px;
+  left: 28px;
+}
+.slide:nth-child(7) {
+  top: -28px;
+  rigth: unset;
+}
+.slide:nth-child(8) {
+  top: 20px;
+  right: 28px;
+  transition: transform 0.5s;
+}
+
+.slide.active img {
+  transform: scale(4);
+  transition: transform 0.5s 0.5s;
+}
+.slide img {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-.item.active {
-  background-color: blue;
-}
-
-svg {
-  height: 300px;
-  overflow: visible;
-  width: 300px;
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.st0 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 2;
-  stroke-miterlimit: 1;
-}
-
-.start {
-  position: absolute;
-  top: 50%;
-  right: -30px;
+  border-radius: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
 }
