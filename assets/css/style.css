@@ -3,30 +3,47 @@ body {
   /* border: 1px solid #000; */
   margin: 0 auto;
 }
+
+.heroBannerSection2 {
+  position: absolute;
+  height: 100%;
+}
+.heroBannerSection3 {
+  position: absolute;
+  bottom: 0;
+}
 .slideShow {
-  height: 100vh;
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  height: 100%;
+  /* height: 100vh; */
+  /* background-color: antiquewhite; */
+  /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
   /* align-items: center; */
+
+  /* background-image: url(../../assets/images/hero-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
 }
 .carousel {
   width: 30rem;
   height: 30rem;
-  border: 2rem solid #eebe97;
+  /* border: 2rem solid #eebe97; */
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-
+  position: absolute;
+  top: 134px;
+  left: 282px;
   transition: rotate 1s;
 }
 .slide {
-  width: 5rem;
+  width: 6rem;
   position: absolute;
-  /* border: 1px solid red; */
+  border: 5px solid #ffffff;
+  border-radius: 100%;
 }
 
 .slide:nth-child(1) {
@@ -63,7 +80,7 @@ body {
 }
 
 .slide.active img {
-  transform: scale(4);
+  transform: scale(2);
   transition: transform 0.5s 0.5s;
 }
 .slide img {
