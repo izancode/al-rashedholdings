@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Al-Rashed | Al-Rashed Holdings</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.al-rashedholdings.com/sites/default/files/aboutheadLogo_3.jpg"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
@@ -13,8 +18,80 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <div class="row m-0 w-100 position-relative">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="assets/images/logo/alrashed-logo.jpg" class="" />
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#division">
+                <span> Division</span>
+                <!--<span class=" d-none d-lg-block"> About</span>-->
+                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
+              </a>
+            </li>
+            <li>
+              <a href="#investments">
+                <span class="">Investments</span>
+                <!--<span class=" d-none d-lg-block">Eligibility</span>-->
+                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
+              </a>
+            </li>
+            <li>
+              <a href="#subsidiaries">
+                <span>Subsidiaries</span>
+                <!--<span class=" d-none d-lg-block">Rules</span>-->
+                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
+              </a>
+            </li>
+            <li>
+              <a href="#partners">
+                <span>Partners</span>
+                <!--<span class=" d-none d-lg-block">Schedule</span>-->
+                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
+              </a>
+            </li>
+            <li>
+              <a href="#about-us">
+                <span>About Us</span>
+                <!--<span class=" d-none d-lg-block">Rewards</span>-->
+                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
+              </a>
+            </li>
+            <li>
+              <a href="#join-us">
+                <span>Join Us</span>
+                <!--<span class=" d-none d-lg-block">Mentors</span>-->
+                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span>Contact</span>
+                <!--<span class=" d-none d-lg-block">Mentors</span>-->
+                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="button d-block d-lg-none">
+          <div class="hamburger" onclick="openNavigation()">
+            <img
+              class="w-100 img-fluid"
+              src="assets//images//icon/hamburger.svg"
+              width="36"
+              height="36"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid p-0 section-container-1">
+      <div class="row w-100 position-relative section-row-1">
         <div class="col-12 p-0 heroBannerSection1">
           <img
             src="assets/images/hero-banner.jpg"
@@ -27,27 +104,39 @@
             <div class="carousel">
               <div class="slide" style="--i: 0">
                 <img src="assets/images/carousel/1.jpg" alt="" />
+                <p>Oil & Gas</p>
               </div>
               <div class="slide" style="--i: 1">
                 <img src="assets/images/carousel/2.jpg" alt="" />
+                <p>Major Project</p>
               </div>
               <div class="slide" style="--i: 2">
                 <img src="assets/images/carousel/3.jpg" alt="" />
+                <p>Logistics</p>
               </div>
               <div class="slide" style="--i: 3">
                 <img src="assets/images/carousel/4.jpg" alt="" />
+                <p>Power</p>
               </div>
               <div class="slide" style="--i: 4">
                 <img src="assets/images/carousel/5.jpg" alt="" />
+                <p>Process Eng. Ser</p>
               </div>
               <div class="slide" style="--i: 5">
                 <img src="assets/images/carousel/6.jpg" alt="" />
+                <p>Home App</p>
               </div>
               <div class="slide" style="--i: 6">
                 <img src="assets/images/carousel/7.jpg" alt="" />
+                <p>Supply & Integration</p>
               </div>
               <div class="slide" style="--i: 7">
                 <img src="assets/images/carousel/8.jpg" alt="" />
+                <p>Communication</p>
+              </div>
+              <div class="slide" style="--i: 8">
+                <img src="assets/images/carousel/9.jpg" alt="" />
+                <p>Manufacturing</p>
               </div>
             </div>
           </div>
@@ -61,7 +150,7 @@
         </div>
       </div>
     </div>
-
+    <div style="height: 200vh"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
