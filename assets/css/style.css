@@ -175,8 +175,8 @@ p {
   cursor: grab;
 }
 .swiper-slide .cardv2 img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
   margin: 0px auto 18px;
 }
