@@ -81,7 +81,7 @@ header nav .menu ul li a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 98px;
+  top: 128px;
   left: 272px;
   transition: rotate 1s;
 }
@@ -91,7 +91,7 @@ header nav .menu ul li a {
   top: 50%;
   left: 50%;
   width: 6rem;
-
+  text-align: center;
   color: #fff;
   border-radius: 100%;
   transform: rotate(calc((var(--i) * var(--angle)) + 90deg)) translate(226px)
@@ -105,7 +105,7 @@ header nav .menu ul li a {
   transition: transform 0.5s 0.5s;
 }
 .slide img {
-  width: 100%;
+  width: 60px;
   border-radius: 100%;
   object-fit: cover;
   transition: transform 0.5s;
@@ -292,12 +292,12 @@ footer p {
 @media only screen and (max-width: 1280px) {
   .slide {
     width: 5rem;
-    transform: rotate(calc((var(--i) * var(--angle)) + 90deg)) translate(200px)
+    transform: rotate(calc((var(--i) * var(--angle)) + 90deg)) translate(188px)
       rotate(calc((var(--i) * -1 * var(--angle)) - 90deg));
   }
   .carousel {
-    top: 70px;
-    left: 236px;
+    top: 76px;
+    left: 240px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -362,7 +362,7 @@ footer p {
     max-width: 320px;
   }
   .carousel {
-    top: -2px;
+    top: 2px;
     left: 36px;
     width: 162px;
     height: 144px;
@@ -380,6 +380,7 @@ footer p {
   .slide img {
     box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.7);
     border: 2px solid #fff;
+    width: 100%;
   }
   h2 {
     font-size: 28px;

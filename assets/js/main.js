@@ -27,21 +27,21 @@ function openNavigation() {
 const slides = document.querySelectorAll(".slide");
 let offset = 0;
 
-setInterval(() => {
-  slides.forEach((slide, index) => {
-    let newIndex = (index + offset) % slides.length;
-    // console.log("newIndex", newIndex);
-    slide.style.setProperty("--i", newIndex);
-  });
-  offset = (offset + 1) % slides.length;
-}, 2000);
+// setInterval(() => {
+//   slides.forEach((slide, index) => {
+//     let newIndex = (index + offset) % slides.length;
+//     // console.log("newIndex", newIndex);
+//     slide.style.setProperty("--i", newIndex);
+//   });
+//   offset = (offset + 1) % slides.length;
+// }, 2000);
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
   freeMode: true,
   autoplay: {
-    delay: 2000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
