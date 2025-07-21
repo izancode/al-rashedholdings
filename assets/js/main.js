@@ -1,18 +1,19 @@
 console.log("Javascript is running");
-let lastScrollY = window.scrollY;
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector("header nav");
+  const currentScrollY = window.scrollY;
 
-// window.addEventListener("scroll", function () {
-//   var navbar = document.querySelector("header nav");
-//   let currentScrollY = window.scrollY;
+  if (currentScrollY > 0) {
+    // Neeche scroll ho gaya, add class
+    navbar.classList.add("headerScrolledUp");
+  }
 
-//   if (currentScrollY < lastScrollY && currentScrollY > 110) {
-//     navbar.classList.add("headerScrolledUp");
-//   } else if (currentScrollY > lastScrollY || currentScrollY <= 110) {
-//     navbar.classList.remove("headerScrolledUp");
-//   }
+  if (currentScrollY === 0) {
+    // Bilkul top par ho, class hatao
+    navbar.classList.remove("headerScrolledUp");
+  }
+});
 
-//   lastScrollY = currentScrollY;
-// });
 function openNavigation() {
   const nav = document.querySelector("header nav .menu");
   const icon = document.querySelector(".hamburger img");
@@ -34,3 +35,30 @@ setInterval(() => {
   });
   offset = (offset + 1) % slides.length;
 }, 2000);
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  freeMode: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    640: {
+      slidesPerView: 2,
+    },
+
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});

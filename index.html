@@ -15,6 +15,10 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -29,55 +33,41 @@
             <li>
               <a href="#division">
                 <span> Division</span>
-                <!--<span class=" d-none d-lg-block"> About</span>-->
-                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
               </a>
             </li>
             <li>
               <a href="#investments">
                 <span class="">Investments</span>
-                <!--<span class=" d-none d-lg-block">Eligibility</span>-->
-                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
               </a>
             </li>
             <li>
               <a href="#subsidiaries">
                 <span>Subsidiaries</span>
-                <!--<span class=" d-none d-lg-block">Rules</span>-->
-                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
               </a>
             </li>
             <li>
               <a href="#partners">
                 <span>Partners</span>
-                <!--<span class=" d-none d-lg-block">Schedule</span>-->
-                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
               </a>
             </li>
             <li>
               <a href="#about-us">
                 <span>About Us</span>
-                <!--<span class=" d-none d-lg-block">Rewards</span>-->
-                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
               </a>
             </li>
             <li>
               <a href="#join-us">
                 <span>Join Us</span>
-                <!--<span class=" d-none d-lg-block">Mentors</span>-->
-                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
               </a>
             </li>
             <li>
               <a href="#contact">
                 <span>Contact</span>
-                <!--<span class=" d-none d-lg-block">Mentors</span>-->
-                <!--<img class="w-100 img-fluid d-block d-lg-none" src="./assets/images/icon/menu-icon/about.png" alt="">-->
               </a>
             </li>
           </ul>
         </div>
-        <div class="button d-block d-lg-none">
+        <div class="button d-block d-xl-none">
           <div class="hamburger" onclick="openNavigation()">
             <img
               class="w-100 img-fluid"
@@ -104,39 +94,39 @@
             <div class="carousel">
               <div class="slide" style="--i: 0">
                 <img src="assets/images/carousel/1.jpg" alt="" />
-                <p>Oil & Gas</p>
+                <p class="carousel-para">Oil & Gas</p>
               </div>
               <div class="slide" style="--i: 1">
                 <img src="assets/images/carousel/2.jpg" alt="" />
-                <p>Major Project</p>
+                <p class="carousel-para">Major Project</p>
               </div>
               <div class="slide" style="--i: 2">
                 <img src="assets/images/carousel/3.jpg" alt="" />
-                <p>Logistics</p>
+                <p class="carousel-para">Logistics</p>
               </div>
               <div class="slide" style="--i: 3">
                 <img src="assets/images/carousel/4.jpg" alt="" />
-                <p>Power</p>
+                <p class="carousel-para">Power</p>
               </div>
               <div class="slide" style="--i: 4">
                 <img src="assets/images/carousel/5.jpg" alt="" />
-                <p>Process Eng. Ser</p>
+                <p class="carousel-para">Process Eng. Ser</p>
               </div>
               <div class="slide" style="--i: 5">
                 <img src="assets/images/carousel/6.jpg" alt="" />
-                <p>Home App</p>
+                <p class="carousel-para">Home App</p>
               </div>
               <div class="slide" style="--i: 6">
                 <img src="assets/images/carousel/7.jpg" alt="" />
-                <p>Supply & Integration</p>
+                <p class="carousel-para">Supply & Integration</p>
               </div>
               <div class="slide" style="--i: 7">
                 <img src="assets/images/carousel/8.jpg" alt="" />
-                <p>Communication</p>
+                <p class="carousel-para">Communication</p>
               </div>
               <div class="slide" style="--i: 8">
                 <img src="assets/images/carousel/9.jpg" alt="" />
-                <p>Manufacturing</p>
+                <p class="carousel-para">Manufacturing</p>
               </div>
             </div>
           </div>
@@ -150,6 +140,190 @@
         </div>
       </div>
     </div>
+
+    <div class="container-fluid my-3 my-xl-0 p-0">
+      <div class="row w-100 m-0">
+        <div class="col-12 col-xl-8 p-2 p-xl-5">
+          <h2 class="text-center mb-2">About Us</h2>
+          <p class="m-0">
+            Kuwait has seen tremendous transformation in the past 100 years. The
+            discovery of Oil reserves changed the country from a modest fishing
+            and pearl diving hamlet to the developed country of today. The
+            Al-Rashed family has been instrumental in this marked development.
+            In 1911, a young man by the name Abdulaziz Abdulmohsin Al-Rashed set
+            the groundwork for what was to grow into one of the most successful
+            <a class="readMoreLink" href="#">Read More...</a>
+          </p>
+        </div>
+        <div class="col-12 col-xl-4 p-0">
+          <div class="row h-100 m-0 w-100">
+            <div class="col-6 about-us-box">
+              <img
+                src="assets/images/about-us-box/1.jpg"
+                class="img-fluid w-100 h-100"
+                alt=""
+              />
+              <!-- <p>10+ <br />Businesses</p> -->
+            </div>
+            <div class="col-6 about-us-box">
+              <img
+                src="assets/images/about-us-box/2.jpg"
+                class="img-fluid w-100 h-100"
+                alt=""
+              />
+              <!-- <p>10+ <br />Decades</p> -->
+            </div>
+            <div class="col-6 about-us-box">
+              <img
+                src="assets/images/about-us-box/3.jpg"
+                class="img-fluid w-100 h-100"
+                alt=""
+              />
+              <!-- <p>100+ <br />Clients</p> -->
+            </div>
+            <div class="col-6 about-us-box">
+              <img
+                src="assets/images/about-us-box/4.jpg"
+                class="img-fluid w-100 h-100"
+                alt=""
+              />
+              <!-- <p>1000+ <br />Employees</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row w-100 m-0">
+        <div class="col-12 p-0 heading-section py-2">
+          <h2 class="text-center m-0 text-light">Our Key Businesses</h2>
+        </div>
+        <div class="col-12 py-2 px-1 py-xl-4 px-xl-2">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/1.jpg" alt="" />
+                  <h3>Production & Manufacturing</h3>
+                  <p>
+                    The business wing engaged in the production, distribution
+                    and sales of expanded metal building utilities and chemicals
+                    for use in the domestic and industrial sectors.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/2.jpg" alt="" />
+                  <h3>Oil and Gas</h3>
+                  <p>
+                    Functioning closely with international technology providers
+                    we offer a wide range of support and services to the Oil &
+                    Gas sector.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/3.jpg" alt="" />
+                  <h3>Communications</h3>
+                  <p>
+                    We are dynamic communication solution providers to our
+                    prestigious clients including Ministries, Petrochemical
+                    Companies etc.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/4.jpg" alt="" />
+                  <h3>Major Projects</h3>
+                  <p>
+                    In liaison with "K" group of companies, we undertake and
+                    provide comprehensive support packages to global EPC
+                    contractors.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/5.jpg" alt="" />
+                  <h3>Logistics</h3>
+                  <p>
+                    We cover the Air, Sea and Land to provide outstanding
+                    logistics solutions, enabled and efficiently handled by our
+                    highly experienced team.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/6.jpg" alt="" />
+                  <h3>Supplies and integration</h3>
+                  <p>
+                    We are prime providers of a wide range of Mechanical,
+                    Electrical and Instrumentation equipments for Kuwait’s Oil &
+                    Utility Industry.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/7.jpg" alt="" />
+                  <h3>Process Engineering Services</h3>
+                  <p>
+                    The latest addition to our services and started with a
+                    vision to provide complete support and service solutions to
+                    varied sectors like Oil and Gas, Chemical Industry etc.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/8.jpg" alt="" />
+                  <h3>Home Appliance & Laundry</h3>
+                  <p>
+                    We are the key vendor in Kuwait for import and distribution
+                    of electrical equipment and appliances of the world’s
+                    leading brands.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="cardv2">
+                  <img src="assets/images/carousel/9.jpg" alt="" />
+                  <h3>Power</h3>
+                  <p>
+                    In response to the ever growing power demand, we offer
+                    management, maintenance and manpower solutions to the power
+                    sector.<br />
+                    <a class="readMoreLink" href="#">Read More...</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row w-100 m-0">
+        <div class="col-12 p-0 heading-section py-2">
+          <h2 class="text-center m-0 text-light">International partnerships</h2>
+        </div>
+        <div class="col-12 py-2 px-1 py-xl-4 px-xl-2 border"></div>
+      </div>
+    </div>
+
     <div style="height: 200vh"></div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -161,6 +335,7 @@
       integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
   </body>
