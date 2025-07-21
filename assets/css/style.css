@@ -81,8 +81,8 @@ header nav .menu ul li a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 128px;
-  left: 272px;
+  top: 158px;
+  left: 300px;
   transition: rotate 1s;
 }
 .slide {
@@ -109,8 +109,8 @@ header nav .menu ul li a {
   border-radius: 100%;
   object-fit: cover;
   transition: transform 0.5s;
-  border: 3px solid #ffffff;
-  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+  /* border: 3px solid #ffffff; */
+  /* box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7); */
 }
 .slide .carousel-para {
   margin: 0;
@@ -247,6 +247,42 @@ p {
   100% {
     transform: translateX(calc(-250px * 7));
   }
+}
+
+.local-representations {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #878787;
+  padding-top: 5px;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+.local-representations p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.local-representations2 {
+}
+
+.local-representations2 img {
+  width: 60px;
+  margin: 4px auto;
+  display: block;
+}
+
+.local-representations2 h4 {
+  text-align: center;
+  font-size: 24px;
+  margin: 8px 0px;
+}
+
+.local-representations2 p {
+  font-size: 16px;
+  margin: 0;
 }
 
 footer {
