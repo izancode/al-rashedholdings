@@ -62,3 +62,21 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+// Go To Top
+window.onscroll = function () {
+  const goTopBtn = document.getElementById("goTopBtn");
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    goTopBtn.style.display = "block";
+  } else {
+    goTopBtn.style.display = "none";
+  }
+};
+
+// Function to scroll to the top
+function goToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
